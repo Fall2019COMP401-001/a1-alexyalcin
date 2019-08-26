@@ -5,7 +5,7 @@ package a1;
 
 /**
  * @author Alex
- * Represents a customer... Absolutely unnecessary for project of this size.
+ * Represents a customer
  */
 public class Customer implements Comparable<Customer>{
     private String firstName;
@@ -62,10 +62,14 @@ public class Customer implements Comparable<Customer>{
         if (getCustomerTotal() < o.getCustomerTotal()) return -1;
         return 0;
     }
-    
-    private class Item {
+    /**
+     * 
+     * @author Alex
+     * Item as considered by a customer specifically.
+     */
+    private class Item { // i know i know, never use public fields :( (Just pretend it's a struct with a constructor)
         public String name;
-        public double price; // i know i know, never use public fields :( (Just pretend it's a struct with a constructor) 
+        public double price;  
         public int amount;
         
         public Item(String name, double price, int amount) {

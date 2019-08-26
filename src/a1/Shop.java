@@ -46,7 +46,11 @@ public class Shop {
         return -1;
     }
     
-    
+    /**
+     * 
+     * @author Alex
+     * Item as considered by store. Assumes infinite stock.
+     */
     private class Offering {
         public String name;
         public double price;
