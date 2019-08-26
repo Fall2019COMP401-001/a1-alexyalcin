@@ -36,7 +36,7 @@ public class A1Adept {
 		}
 		
 		Arrays.sort(customers);
-		DecimalFormat money = new DecimalFormat("#.00");
+		DecimalFormat money = new DecimalFormat("0.00");
 		System.out.println ("Biggest: " + customers[customerCount - 1].getFullName() + " (" + money.format(customers[customerCount - 1].getCustomerTotal()) + ")");
 		System.out.println ("Smallest: " + customers[0].getFullName() + " (" + money.format(customers[0].getCustomerTotal()) + ")");
 		

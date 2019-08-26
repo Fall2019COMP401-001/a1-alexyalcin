@@ -30,10 +30,10 @@ public class A1Novice {
 		    complete_customers++;
 		}
 		
-    DecimalFormat money = new DecimalFormat("#.00");
+    DecimalFormat money = new DecimalFormat("0.00");
 
 		for (int i = 0; i < customer_num; i++) {
-		    System.out.println(customers[i].getAbbreviatedName() + " " + money.format(customers[i].getCustomerTotal()));
+		    System.out.println(customers[i].getAbbreviatedName() + ": " + money.format(customers[i].getCustomerTotal()));
 		    
 		}
 
